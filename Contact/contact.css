@@ -1,5 +1,5 @@
 body {
-    background-image: url('./pexels-ron-lach-10526919.jpg'); /* Path to your image */
+    background-image: url('./pexels-ron-lach-10526919.jpg'); 
     background-size: cover; /* Ensures the image covers the entire background */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; 
@@ -11,12 +11,9 @@ body {
 }
 .logo{
     max-width: 180px;
-    max-height: 180px;
-    
+    max-height: 180px; 
     border-radius: 50px;
     padding: 1px;
-    
-
 }
 
 .logo img{

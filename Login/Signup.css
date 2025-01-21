@@ -87,7 +87,7 @@ a {
     text-decoration:none;
   }
 
-  /* Media Queries */ 
+    /* Media Queries */ 
   /* For tablets and larger screens */ 
   @media (min-width: 768px) 
   { 
@@ -109,5 +109,4 @@ a {
     input, input[type="submit"] { 
         max-width: 500px; 
     } 
-    .other-logins { max-width: 500px; } 
-}
+    .other-logins { max-width: 500px; } }
