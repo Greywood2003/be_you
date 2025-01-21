@@ -81,6 +81,27 @@ input[type="submit"]{
     border-color: #87A2FF;
 }
 
+.imagex img {
+    max-width: 100px;
+    padding-left: 30px; 
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 25px; 
+    max-height: 30px; 
+    border: 1px solid white;
+    border-color: white;
+    background-color: black;
+    border-radius: 8px;
+    transition: transform 0.3s ease
+}
+
+.imagex img:hover{
+    transform: scale(1.1);
+    border-color: #87A2FF;
+    
+}
+
 
 a {
     color: #87A2FF ;
