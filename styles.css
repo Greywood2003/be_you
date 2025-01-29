@@ -1,5 +1,5 @@
 body {
-    background-image: url('./pexels-ron-lach-10526919.jpg'); 
+    background-image: url('./Images/pexels-ron-lach-10526919.jpg'); 
     background-size: cover; /* Ensures the image covers the entire background */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* image doesn't repeat */
@@ -19,40 +19,64 @@ body {
 
   .logo{
    
-    max-width: 180px;
-    max-height: 180px; 
+    width: 180px;
+    height: 180px; 
     border-radius: 50px;
     padding: 1px;
     align-items:center ;
 }
 
 .logo img{
-    max-width: 180px;
-    max-height: 180px;    
+    width: 180px;
+    height: 180px;    
 }
-
+.login-text{
+    font-size: 23px;
+}
 .login-form{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 input{
-    padding: 12px; 
+    padding: 10px; 
     margin-bottom: 20px;  
-    width: 250px; 
+    width: auto; 
     border-radius: 8px;
 }
 
-input[type="submit"]{
+.loginbtn{
     background-color: #C4D7FF;
     width: 270px;
     padding: 12px; 
+    transition: transform 0.3s ease
 }
+
+input[type="button"]:hover{
+    transform: scale(1.1);
+    border-color: #87A2FF;
+}
+
+
+
+
 
 .or-text{
     text-align: center;
     color: rgb(46, 45, 45);
 }
+
+select{
+    border: #B76E79;
+    background-color: whitesmoke;
+    margin-bottom: 2px;
+  }
+
+  #log_in{
+    align-items: center;
+    
+    width: 170px;
+  }
 
 .other-logins{
     display: flex;
@@ -107,6 +131,88 @@ a {
     color: #87A2FF ;
     text-decoration:none;
   }
+
+  .login_signup{
+      display: inline;
+  }
+
+  /*Contact Page*/
+  .contact {
+    display: flex; /* Enable Flexbox */
+    justify-content: space-between; /* Create space between columns */
+    gap: 20px; /* Optional: Adds space between columns */
+    padding: 20px;
+  }
+
+  input[type="submit"] {
+    background-color: #C4D7FF; /* Rose Gold for button */
+    color: black;
+    border: none solid black;
+    cursor: pointer;
+    padding: 8px;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    margin: 6px;
+
+  }
+
+.contact-title {
+    color:#87A2FF; 
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  .text-container{
+    flex: 0.9 ;
+    padding: 20px;
+ }
+
+ .contact-form {
+    flex: 1; /* Takes up equal space as the text-container */
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    width: auto;
+  }
+
+  input, textarea  {
+    padding: 9px;
+    margin-bottom: 6px; /* Adds space between fields */
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    
+  }
+
+  select{
+    border: #B76E79;
+    background-color: whitesmoke;
+    margin-bottom: 5px;
+  }
+
+  .submit_cont{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .interest-container {
+    display: inline-block; /* Keeps the label and select together */
+    padding-bottom: 5px; /* Adds space between the text and the line */
+    border-bottom: 2px solid black; 
+    width: auto;
+  }
+
+  
+  input:invalid, select:invalid, textarea:invalid {
+    border: 2px solid #C4D7FF; 
+    background-color: whitesmoke; 
+}
+input:valid, select:valid, textarea:valid {
+    border: 2px solid #FFD7C4; /* Highlight valid fields */
+}
+
+
 
     /* Media Queries */ 
   /* For tablets and larger screens */ 

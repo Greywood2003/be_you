@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Contact us</title>
 </head>
 <body>
-    
+    <div class="page_container">
     <div class="logo">
-        <img src="./Akado Logo - Black with Transparent Background - 5000x5000.png" alt="Akado Threads Logo">
+        <img src="./Images/Akado Logo - Black with Transparent Background - 5000x5000.png" alt="Akado Threads Logo">
 
     </div>
     <br>
@@ -47,10 +47,11 @@
             <br><br>
             <textarea name="message" id="message" rows="5" cols="40" placeholder="Message" required></textarea>
             <br><br>
+            <div class="submit_cont">
             <div class="interest-container">
                 <label for="interest">What are you interested in?</label>
                 <select name="interest" id="interest" >
-                    <option value="" disabled selected>(optional)</option>
+                    <option value="" >(options)</option>
                     <option value="bags">Knitted bags</option>
                     <option value="sweaters">Knitted sweaters</option>
                     <option value="ponchos">Knitted ponchos</option>
@@ -58,11 +59,20 @@
                     <option value="skirts">Knitted skirts</option>
                     <option value="scarfs">Knitted scarfs</option>
                 </select>
+                
             </div>
-            
-            <input type="submit" value="Submit" id="submit" name="submit">
+
+            <div class="Submit-form">
+                <input type="submit" value="Submit" id="submit" name="submit">
+            </div>
+            </div>
         </form>
+
     </div>
+    <br>
+   
 </div>
+</div>
+
 </body>
 </html>
