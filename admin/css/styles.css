@@ -1,0 +1,239 @@
+body {
+    background-image: url('./Images/pexels-ron-lach-10526919.jpg'); 
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* image doesn't repeat */
+    background-attachment: fixed; /*Background not to move*/
+    font-family: 'Arial', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+.login-container{
+    display:flex; /*Enables Flexbox*/
+    flex-direction: column;/*Dictates the direction of the flex container*/
+    max-height: 300vh;
+    margin-left: 20px;
+    align-items: center;
+  }
+
+  .logo{
+   
+    width: 180px;
+    height: 180px; 
+    border-radius: 50px;
+    padding: 1px;
+    align-items:center ;
+}
+
+.logo img{
+    width: 180px;
+    height: 180px;    
+}
+.login-text{
+    font-size: 23px;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    padding: 10px; 
+    margin-bottom: 20px;  
+    width: auto; 
+    border-radius: 8px;
+}
+
+.loginbtn{
+    background-color: #C4D7FF;
+    width: 270px;
+    padding: 12px; 
+    transition: transform 0.3s ease
+}
+
+input[type="button"]:hover{
+    transform: scale(1.1);
+    border-color: #87A2FF;
+}
+
+
+
+
+
+.or-text{
+    text-align: center;
+    color: rgb(46, 45, 45);
+}
+
+select{
+    border: #B76E79;
+    background-color: whitesmoke;
+    margin-bottom: 2px;
+  }
+
+  #log_in{
+    align-items: center;
+    
+    width: 170px;
+  }
+
+.other-logins{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.other-logins img { 
+     max-width: 100px;
+     padding-left: 30px; 
+     padding-right: 30px;
+     padding-top: 5px;
+     padding-bottom: 5px;
+     margin: 25px; 
+     max-height: 30px; 
+     border: 1px solid white;
+     border-color: white;
+     background-color: white;
+     border-radius: 8px;
+     transition: transform 0.3s ease
+}
+
+.other-logins img:hover { 
+    transform: scale(1.1);
+    border-color: #87A2FF;
+}
+
+.imagex img {
+    max-width: 100px;
+    padding-left: 30px; 
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 25px; 
+    max-height: 30px; 
+    border: 1px solid white;
+    border-color: white;
+    background-color: black;
+    border-radius: 8px;
+    transition: transform 0.3s ease
+}
+
+.imagex img:hover{
+    transform: scale(1.1);
+    border-color: #87A2FF;
+    
+}
+
+
+a {
+    color: #87A2FF ;
+    text-decoration:none;
+  }
+
+  .login_signup{
+      display: inline;
+  }
+
+  /*Contact Page*/
+  .contact {
+    display: flex; /* Enable Flexbox */
+    justify-content: space-between; /* Create space between columns */
+    gap: 20px; /* Optional: Adds space between columns */
+    padding: 20px;
+  }
+
+  input[type="submit"] {
+    background-color: #C4D7FF; /* Rose Gold for button */
+    color: black;
+    border: none solid black;
+    cursor: pointer;
+    padding: 8px;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    margin: 6px;
+
+  }
+
+.contact-title {
+    color:#87A2FF; 
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  .text-container{
+    flex: 0.9 ;
+    padding: 20px;
+ }
+
+ .contact-form {
+    flex: 1; /* Takes up equal space as the text-container */
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    width: auto;
+  }
+
+  input, textarea  {
+    padding: 9px;
+    margin-bottom: 6px; /* Adds space between fields */
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    
+  }
+
+  select{
+    border: #B76E79;
+    background-color: whitesmoke;
+    margin-bottom: 5px;
+  }
+
+  .submit_cont{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .interest-container {
+    display: inline-block; /* Keeps the label and select together */
+    padding-bottom: 5px; /* Adds space between the text and the line */
+    border-bottom: 2px solid black; 
+    width: auto;
+  }
+
+  
+  input:invalid, select:invalid, textarea:invalid {
+    border: 2px solid #C4D7FF; 
+    background-color: whitesmoke; 
+}
+input:valid, select:valid, textarea:valid {
+    border: 2px solid #FFD7C4; /* Highlight valid fields */
+}
+
+
+
+    /* Media Queries */ 
+  /* For tablets and larger screens */ 
+  @media (min-width: 768px) 
+  { 
+    .login-container { 
+        max-width: 600px; margin: auto; 
+    }
+    input, input[type="submit"] { 
+        max-width: 400px; 
+    } .other-logins { 
+        max-width: 400px; 
+    } 
+}
+
+/* For desktop screens */ 
+@media (min-width: 1024px) 
+{ 
+    .login-container { max-width: 800px; 
+    } 
+    input, input[type="submit"] { 
+        max-width: 500px; 
+    } 
+    .other-logins { max-width: 500px; } }
